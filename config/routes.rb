@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
-  resources :posts
-	resources :pages
+  resources :posts do
+	 resources :comments
+  end
+
+
+
+  resources :pages
 end
